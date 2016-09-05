@@ -63,7 +63,7 @@
                 }
             }, this));
 
-            this.$widget.find('select').css('width', 'auto');
+            // this.$widget.find('select').css('width', 'auto');
 
             // hide original input and insert widget
             this.$element.hide().after(this.$widget);
@@ -90,7 +90,7 @@
             });
 
             //replace spaces with &nbsp;
-            tpl = tpl.replace(/ /g, '&nbsp;');
+            tpl = tpl.replace(/ /g, '');
 
             //second pass
             $.each(this.map, function(k, v) {
